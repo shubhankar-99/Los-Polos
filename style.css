@@ -1,0 +1,321 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 58px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    z-index:9;
+}
+
+#navbar::before{
+    
+    content: "";
+    background-color: black;
+    position: absolute;
+   
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+
+    z-index: -1; /* So that content appears on top of background */
+    opacity:0.7;
+
+}
+
+
+/* Navigation Bar: Logo Image */
+#logo{
+    margin: 10px 35px ;
+}
+
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight:700;
+
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+   
+   background-color:white;
+
+}
+
+/* Home Section */
+
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:770px;
+    justify-content:center;
+    align-items:center;
+    z-index:-1;
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('https://img5.goodfon.com/wallpaper/nbig/e/7d/food-coffee-cup-foam-dark-drink-spray-wallpaper.jpg') no-repeat center center/cover; /* A good way to adjust the background image */
+    top: 0px;
+    left: 0px;
+   
+    height:866px;
+    width:100%;
+
+    z-index: -2; /* So that content appears on top of background */
+    opacity:0.95;
+
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+#services-container{
+    position: relative;
+   
+
+    
+
+}
+#services-container::before{
+    content:"";
+    position:absolute;
+    margin:0px;
+    background: url('https://wallpaperplay.com/walls/full/1/6/2/93324.jpg') no-repeat center center/cover; /* A good way to adjust the background image */;
+    width:100%;
+    height: 100%;
+    z-index:-1;
+    opacity:.7;
+}
+#services{
+    
+    margin:0px 34px;
+    display:flex;
+    padding:30px;
+    
+}
+
+
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 0px 50px;
+    border-radius: 28px;
+    background: #f2f2f2;
+
+}
+
+#services .box img{
+    display:block;
+    height: 160px;
+    margin: auto;
+    
+    
+}
+.box p{
+    font-family: 'Open Sans', sans-serif;
+   
+}
+/* Cliet Section */
+#client-section{
+    position: relative;
+    
+
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url('https://wallpaperplay.com/walls/full/7/b/3/186012.jpg') no-repeat center center/cover; /* A good way to adjust the background image */;
+    width:100%;
+    height: 100%;
+    z-index:-1;
+    opacity:.5;
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.client-item{
+    padding:30px;
+}
+#clients img{
+    display: block;
+    height:130px;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+   
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://jobeduresult.com/wp-content/uploads/2020/05/contact-us-hand-businessman-holding-mobile-smartphone-with-mail-phone-email-icon_52701-38.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    border-color: black;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width:40%;
+
+}
+
+#contact-box form label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: 700;
+    
+}
+
+/* Footer */
+
+footer{
+    background-color: black;
+    color:white;
+    padding:9px 20px;
+}
+
+/* Utility Classes - Can be reused */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    padding: 12px;
+    font-weight: 700;
+
+}
+
+
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color:white;
+    margin:17px;
+    font-size:1.5rem;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.btn:active{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color:white;
+    margin:17px;
+    font-size:1.2rem;
+    border-radius:10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btnn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color:white;
+    margin:17px;
+    font-size:1.5rem;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.btnn:active{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color:white;
+    margin:17px;
+    font-size:1.2rem;
+    border-radius:10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.form-button{
+    text-align: center;
+   
+}
+.center{
+    text-align: center;
+}
+#navbar{
+    powition:sticky;
+}
