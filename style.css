@@ -319,3 +319,28 @@ footer{
 #navbar{
     powition:sticky;
 }
+
+
+
+
+
+@media (max-width: 768px){
+   .navbar{
+	   margin-left: 90px;
+   }
+}
+
+
+@media (max-width: 487px){
+	.navbar{
+		margin-left: 20px;
+	}
+ }
+
+ @media (max-width: 750px){
+	.navbar{
+		width: 70%;
+		height: 60%;
+		left:15%
+	}
+ }
