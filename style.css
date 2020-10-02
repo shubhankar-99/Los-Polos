@@ -1,5 +1,6 @@
 /* CSS Reset */
 *{
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
@@ -16,6 +17,7 @@ html{
 
 #navbar{
     display:flex;
+    justify-content: center;
     align-items: center;
     position: sticky;
     top:0px;
@@ -317,5 +319,5 @@ footer{
     text-align: center;
 }
 #navbar{
-    powition:sticky;
+    position:sticky;
 }
